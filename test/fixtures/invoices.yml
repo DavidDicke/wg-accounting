@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_invoice: 2025-02-28
+  amount: 1
+  date_advance_new_payment_amount: 2025-02-28
+  advance_payment_amount: 1
+
+two:
+  date_invoice: 2025-02-28
+  amount: 1
+  date_advance_new_payment_amount: 2025-02-28
+  advance_payment_amount: 1
