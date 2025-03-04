@@ -1,4 +1,6 @@
 class TransactionsController < ApplicationController
+  require 'csv'
+
   def index
     @transactions = Transaction.all
   end
@@ -15,6 +17,7 @@ class TransactionsController < ApplicationController
       render :new
     end
   end
+
 
   private
 

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get "bank_accounts/show"
+  get "bank_accounts/new"
+  get "bank_accounts/create"
+  get "bank_accounts/edit"
+  get "bank_accounts/updat"
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
