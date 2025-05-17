@@ -53,6 +53,8 @@ GEM
       activemodel (= 8.0.1)
       activesupport (= 8.0.1)
       timeout (>= 0.4.0)
+    activerecord-import (2.1.0)
+      activerecord (>= 4.2)
     activestorage (8.0.1)
       actionpack (= 8.0.1)
       activejob (= 8.0.1)
@@ -198,6 +200,21 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
+    polars-df (0.18.0)
+      bigdecimal
+      rb_sys
+    polars-df (0.18.0-aarch64-linux)
+      bigdecimal
+    polars-df (0.18.0-aarch64-linux-musl)
+      bigdecimal
+    polars-df (0.18.0-arm64-darwin)
+      bigdecimal
+    polars-df (0.18.0-x86_64-darwin)
+      bigdecimal
+    polars-df (0.18.0-x86_64-linux)
+      bigdecimal
+    polars-df (0.18.0-x86_64-linux-musl)
+      bigdecimal
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -253,6 +270,9 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
+    rake-compiler-dock (1.9.1)
+    rb_sys (0.9.115)
+      rake-compiler-dock (= 1.9.1)
     rdoc (6.12.0)
       psych (>= 4.0.0)
     regexp_parser (2.10.0)
@@ -365,6 +385,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  activerecord-import
   bootsnap
   brakeman
   capybara
@@ -375,6 +396,7 @@ DEPENDENCIES
   jbuilder
   kamal
   pg (~> 1.1)
+  polars-df
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)

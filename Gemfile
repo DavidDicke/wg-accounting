@@ -19,6 +19,12 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# efficient and secure bulk insetion into db
+gem "activerecord-import"
+
+# dataframe data manipulation
+gem "polars-df"
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
