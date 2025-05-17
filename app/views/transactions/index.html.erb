@@ -1,0 +1,17 @@
+<h1>All Transactions</h1>
+<table>
+  <tr>
+    <td>Amount</td>
+    <td>Comment</td>
+    <td>Date</td>
+    <td>Transaction Type</td>
+  </tr>
+  <%= @transactions.each |transaction| do %>
+    <tr>
+      <td><%= transaction.amount %></td>
+      <td><%= transaction.comment%></td>
+      <td><%= transaction.date %></td>
+      <td><%= transaction.transaction_type %></td>
+    </tr>
+  <% end %>
+</table>

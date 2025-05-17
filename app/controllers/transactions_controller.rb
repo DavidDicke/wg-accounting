@@ -30,7 +30,7 @@ class TransactionsController < ApplicationController
             comment: row["comment"],
             bank_account_id: BankAccount.where(iban: transaction_params[:bank_account_iban])
           )
-          unless trans
+          return unless transaction.save
         end
       end
     end

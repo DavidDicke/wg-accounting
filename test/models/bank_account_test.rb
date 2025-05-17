@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: bank_accounts
+#
+#  id         :bigint           not null, primary key
+#  bank_name  :string
+#  bic        :string
+#  close_date :date
+#  iban       :string
+#  start_date :date
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 require "test_helper"
 
 class BankAccountTest < ActiveSupport::TestCase
